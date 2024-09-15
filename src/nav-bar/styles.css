@@ -14,4 +14,14 @@
 
 .nav-bar button {
     font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-bar button:active {
+    border: 1px solid rgb(108, 152, 219) !important;
+}
+
+.selected {
+    border: 1px solid rgb(108, 152, 219);
 }

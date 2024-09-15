@@ -41,9 +41,10 @@ h1 {
 button {
   border-radius: 5px;
   border: 1px solid transparent;
-  padding: 0.6em 1em;
+  padding: 0.5em 0.7em;
   cursor: pointer;
   transition: border-color 0.25s;
+  outline: 0px auto -webkit-focus-ring-color;
 }
 
 button.clear {
@@ -52,12 +53,12 @@ button.clear {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: #657eb0;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+/* button:focus, */
+/* button:focus-visible {
+  outline: 0px auto -webkit-focus-ring-color;
+} */
 
 .roboto-thin {
   font-family: "Roboto", sans-serif;
