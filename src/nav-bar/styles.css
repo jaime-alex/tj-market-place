@@ -1,0 +1,17 @@
+
+.nav-bar {
+    width: 100vw;
+    height: 50px;
+    position: sticky;
+    display: flex;
+    place-items: center;
+    padding: 5px 15px 5px 15px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.nav-bar button {
+    font-size: 20px;
+}
