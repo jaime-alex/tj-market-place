@@ -45,6 +45,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   outline: 0px auto -webkit-focus-ring-color;
+  margin: 5px;
+}
+
+button.green {
+  background-color: rgb(0, 128, 100);
 }
 
 button.clear {
@@ -54,11 +59,9 @@ button.clear {
 
 button:hover {
   border-color: #657eb0;
+  opacity: 0.8;
 }
-/* button:focus, */
-/* button:focus-visible {
-  outline: 0px auto -webkit-focus-ring-color;
-} */
+
 
 .roboto-thin {
   font-family: "Roboto", sans-serif;

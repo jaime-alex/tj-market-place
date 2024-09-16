@@ -1,5 +1,8 @@
 .input {
     border-radius: 5px;
-    padding: 5px;
+    padding: 11px;
     border: 1px solid lightgray;
+    background-color: rgba(179, 245, 223, 0.364);
+    margin: 5px;
+    font-size: medium;
 }
