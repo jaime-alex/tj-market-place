@@ -1,0 +1,8 @@
+label.clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+label:hover {
+    color: rgb(14, 130, 151);
+}

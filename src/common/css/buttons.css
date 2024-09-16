@@ -1,0 +1,30 @@
+button {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 0.5em 0.7em;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    outline: 0px auto -webkit-focus-ring-color;
+  }
+  
+  button.green {
+    background-color: rgb(8, 121, 129);
+  }
+  
+  button.clear {
+    background-color: transparent;
+    color: white;
+  }
+  
+  button:hover {
+    border-color: #657eb0;
+    opacity: 0.8;
+  }
+  
+  button:active {
+    opacity: 0.9;
+  }
+  
+  button:focus, button:focus-visible {
+    outline: 1px auto rgb(1, 174, 142);
+  }

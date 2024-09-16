@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './styles.css'
+import styles from './NavBar.module.css'
 import { useLocation, useNavigate } from "react-router-dom";
 import { Outlet } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ export default function NavBar () {
     const [selectedOption, setSelectedOption] = useState(location.pathname)
 
     const getSelectedStyles = (option: string) => {
-        return selectedOption === option ? 'selected' : ''
+        return selectedOption === option ? styles.selected : ''
     }
 
     const optionClickedHandler = (path: string) => {
@@ -18,7 +18,7 @@ export default function NavBar () {
         navigate(path)
     }
 
-    return <><div className='nav-bar'>
+    return <><div className={styles['nav-bar']}>
         <button className={`clear ${getSelectedStyles('/')}`}
                 onClick={() => optionClickedHandler('/')}>Home</button>
         <button className={`clear ${getSelectedStyles('/identify')}`}

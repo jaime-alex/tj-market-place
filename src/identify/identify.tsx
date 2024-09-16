@@ -1,6 +1,5 @@
 import { useState } from "react"
 import SignIn from "./sign-in"
-import "./styles.css"
 import SignUp from "./sign-up"
 
 export default function Identify() {
