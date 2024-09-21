@@ -15,6 +15,12 @@ button {
     background-color: transparent;
     color: white;
   }
+
+  button.yellow {
+    background-color: rgb(231 196 22);;
+    color: #11222f;
+    opacity: 1;
+  }
   
   button:hover {
     border-color: #657eb0;

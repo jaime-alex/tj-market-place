@@ -2,7 +2,7 @@
     width: 100%;
     min-width: 320px;
     max-width: 380px;
-    height: 380px;
+    height: auto;
     flex-grow: 1;
     flex-shrink: 0;
 }
@@ -11,4 +11,20 @@
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+.price .value{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.price .symbol, .price .fraction {
+    top: -.75em;
+    font-size: 13px;
+    position: relative;
+}
+
+.button {
+    margin-top: 10px;
+    line-height: 22px;
 }

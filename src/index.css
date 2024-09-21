@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #20415c;
+  color: #11222f;
   background-color: #242424;
 
   font-synthesis: none;
@@ -38,27 +38,23 @@ h1 {
   line-height: 1.1;
 }
 
-h1,h2,h3,label {
+h1,h2,h3,h4,label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #20415c;
+  color: #11222f;
 }
 
-h1,h2,h3,label,p {
+h1,h2,h3,h4,label,p {
   margin-top: 3px;
   margin-bottom: 3px;
 }
 
-h1,h2,h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #20415c;
-}
-
 p {
-  @extend .roboto-light;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
 }
 
 .roboto-thin {
@@ -71,7 +67,6 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: brown;
 }
 
 .roboto-regular {

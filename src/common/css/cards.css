@@ -2,7 +2,7 @@ div.card {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background-color: rgba(231, 231, 231, 0.763);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     width: 400px;
     padding: 25px;

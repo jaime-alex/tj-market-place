@@ -9,5 +9,11 @@ export default function ProductsContainer() {
         <Product></Product>
         <Product></Product>
         <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
+        <Product></Product>
     </div>
 }
