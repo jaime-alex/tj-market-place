@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './NavBar.module.css'
 import { useLocation, useNavigate } from "react-router-dom";
 import { Outlet } from 'react-router-dom';
@@ -8,6 +8,7 @@ export default function NavBar () {
     const navigate = useNavigate();
     const location = useLocation()
     const [selectedOption, setSelectedOption] = useState(location.pathname)
+    const [scrolled, setScrolled] = useState(false)
 
     const getSelectedStyles = (option: string) => {
         return selectedOption === option ? styles.selected : ''
@@ -18,7 +19,25 @@ export default function NavBar () {
         navigate(path)
     }
 
-    return <><div className={styles['nav-bar']}>
+    const setScrollStyles = () => {
+        const scrollY = window.scrollY;
+      
+        if (scrollY > 100) {
+          setScrolled(true)
+        } else {
+          setScrolled(false)
+        }
+      }
+
+    useEffect(() => {
+        window.addEventListener('scroll', setScrollStyles);
+
+        return () => {
+            window.removeEventListener('scroll', setScrollStyles)
+        }
+    }, [])
+
+    return <><div className={`${styles['nav-bar']} ${scrolled ? styles.scrolled : ''}`}>
         <button className={`clear ${getSelectedStyles('/')}`}
                 onClick={() => optionClickedHandler('/')}>Home</button>
         <button className={`clear ${getSelectedStyles('/identify')}`}

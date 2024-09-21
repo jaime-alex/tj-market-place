@@ -32,5 +32,5 @@ button {
   }
   
   button:focus, button:focus-visible {
-    outline: 1px auto rgb(1, 174, 142);
+    outline: 0.3px auto rgb(211, 203, 136);
   }
