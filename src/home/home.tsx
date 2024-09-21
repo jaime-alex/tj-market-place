@@ -1,5 +1,7 @@
+import ProductsContainer from "../products/products-container";
+
 export default function Home() {
     return <div>
-        <h3>Home Test</h3>
+        <ProductsContainer/>
     </div>
 }

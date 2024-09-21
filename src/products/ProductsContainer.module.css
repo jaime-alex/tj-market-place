@@ -1,0 +1,18 @@
+.productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.product {
+    width: 100%;
+    min-width: 320px;
+    max-width: 420px;
+    height: 280px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgb(228, 228, 228);
+    opacity: 0.8;
+    margin: 10px;
+}
