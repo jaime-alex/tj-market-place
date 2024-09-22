@@ -43,7 +43,7 @@ export default function NavBar () {
                 onClick={() => optionClickedHandler('/')}>Home</button>
         <button className={`clear ${getSelectedStyles('/identify')}`}
                 onClick={() => optionClickedHandler('/identify')}>Log In</button>
-        <img src={cartIcon} style={{width: "35px", height: "35px", position: "fixed", right: "20px"}}></img>
+        <img src={cartIcon} style={{width: "35px", height: "35px", position: "absolute", right: "20px"}}></img>
     </div>
     <Outlet></Outlet>
     </>
