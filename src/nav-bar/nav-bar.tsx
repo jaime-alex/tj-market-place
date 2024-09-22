@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from './NavBar.module.css'
 import { useLocation, useNavigate } from "react-router-dom";
 import { Outlet } from 'react-router-dom';
+import cartIcon from "../assets/cart.svg"
 
 
 export default function NavBar () {
@@ -42,6 +43,7 @@ export default function NavBar () {
                 onClick={() => optionClickedHandler('/')}>Home</button>
         <button className={`clear ${getSelectedStyles('/identify')}`}
                 onClick={() => optionClickedHandler('/identify')}>Log In</button>
+        <img src={cartIcon} style={{width: "35px", height: "35px", position: "fixed", right: "20px"}}></img>
     </div>
     <Outlet></Outlet>
     </>
