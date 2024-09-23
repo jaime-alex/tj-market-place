@@ -12,6 +12,9 @@
     z-index: 1;
     background-image: linear-gradient(45deg, #36216f, #7346aa, #aa4cd4);
     transition: background-color 1s ease;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .nav-bar button {

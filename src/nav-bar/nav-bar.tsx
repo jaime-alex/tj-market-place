@@ -43,6 +43,7 @@ export default function NavBar () {
                 onClick={() => optionClickedHandler('/')}>Home</button>
         <button className={`clear ${getSelectedStyles('/identify')}`}
                 onClick={() => optionClickedHandler('/identify')}>Log In</button>
+        <input className='input' placeholder="Search" style={{marginLeft: "10px", width: "400px", padding: "10px", marginRight: "100px"}}></input>
         <img src={cartIcon} style={{width: "35px", height: "35px", position: "absolute", right: "20px"}}></img>
     </div>
     <Outlet></Outlet>
