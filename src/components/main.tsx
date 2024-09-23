@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
-import './index.css'
-import './common/css/inputs.css'
-import './common/css/cards.css'
-import './common/css/buttons.css'
-import './common/css/labels.css'
+import '../css/index.css'
+import '../css/inputs.css'
+import '../css/cards.css'
+import '../css/buttons.css'
+import '../css/labels.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

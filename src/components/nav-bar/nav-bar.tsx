@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from './NavBar.module.css'
 import { useLocation, useNavigate } from "react-router-dom";
 import { Outlet } from 'react-router-dom';
-import cartIcon from "../assets/cart.svg"
+import cartIcon from "../../assets/cart.svg"
 
 
 export default function NavBar () {

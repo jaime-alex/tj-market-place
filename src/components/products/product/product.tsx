@@ -1,4 +1,4 @@
-import Card from "../../common/components/Card"
+import Card from "../../common/Card"
 import styles from "./Product.module.css"
 
 export default function Product() {
