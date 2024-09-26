@@ -20,6 +20,6 @@ export default function ProductsContainer() {
     if (products == null) return <h1>Loading...</h1>
 
     return <div className={styles.productsContainer}>
-        {products.map(_ => (<Product></Product>))}
+        {products.map(product => (<Product {...product}></Product>))}
     </div>
 }
