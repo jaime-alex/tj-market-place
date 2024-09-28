@@ -23,19 +23,12 @@
     transition: color 1s ease;
 }
 
-.nav-bar button:active {
-    /* border: 1px solid rgb(108, 152, 219) !important; */
-}
-
 .selected {
     border: 1px solid rgb(108, 152, 219);
 }
 
-.nav-bar.scrolled {
-    /* box-shadow: 0 7px 7px -5px #403f3f; */
-    /* background-color: rgba(245, 245, 247, .9); */
-}
-
-.nav-bar.nav-bar.scrolled button {
-    /* color: black !important; */
+@media (max-width: 900px) {
+    .nav-bar button {
+        font-size: 14px;
+    }
 }

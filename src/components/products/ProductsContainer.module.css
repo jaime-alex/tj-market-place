@@ -5,3 +5,8 @@
     margin: 10px;
 }
 
+@media (max-width: 900px) {
+    .productsContainer {
+        margin: 5px;
+    }
+}

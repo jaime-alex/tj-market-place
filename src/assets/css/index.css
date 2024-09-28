@@ -129,6 +129,11 @@ p {
   font-style: italic;
 }
 
+input:focus {
+  outline: none; /* Removes the outline */
+  border: 2px solid #7d4df4;
+  box-shadow: none; /* Remove any default shadow */
+}
 
 @media (prefers-color-scheme: light) {
   :root {

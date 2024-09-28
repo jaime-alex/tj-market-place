@@ -7,7 +7,11 @@ import { ProductsContext } from "../../contexts/products-context"
 export default function ProductsContainer() {
     const productsContext = useContext(ProductsContext)
 
-    useEffect(() => {
+    const loadProducts = () => {
+        if (productsContext.products?.length > 0) {
+            return
+        }
+        
         const fetchData = async () => { 
             return await getProducts("") 
         }
@@ -16,9 +20,13 @@ export default function ProductsContainer() {
             console.log(res.Items)
             productsContext.setProducts(res.Items)
         }).catch(console.error)
+    }
+
+    useEffect(() => {
+        loadProducts()
     },[])
 
-    if (productsContext.products == null) return <h1>Loading...</h1>
+    if (productsContext.products == null) return <div id="loader" className="loader"></div>
 
     return <div className={styles.productsContainer}>
         {productsContext.products.map(product => (<Product {...product}></Product>))}
