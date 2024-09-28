@@ -10,10 +10,17 @@
     padding: 10px;
 }
 
-.image {
+.imageCover {
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+.imageContain {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 100px;
 }
 
 .price .value{
