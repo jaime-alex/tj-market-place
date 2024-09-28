@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 import styles from "./ProductsContainer.module.css"
 import Product from "./product/product"
 import { getProducts } from "../../services/products-http-service"
@@ -9,7 +9,7 @@ export default function ProductsContainer() {
 
     useEffect(() => {
         const fetchData = async () => { 
-            return await getProducts("t") 
+            return await getProducts("") 
         }
 
         fetchData().then((res) => {

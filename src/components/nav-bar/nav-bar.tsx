@@ -1,7 +1,6 @@
-import { KeyboardEventHandler, useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import styles from './NavBar.module.css'
 import { useLocation, useNavigate } from "react-router-dom";
-import { Outlet } from 'react-router-dom';
 import cartIcon from "../../assets/cart.svg"
 import { ProductsContext } from '../../contexts/products-context';
 import { getProducts } from '../../services/products-http-service';

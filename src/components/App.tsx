@@ -2,7 +2,6 @@
 import './App.css'
 import Home from './home/home';
 import Identify from './identify/identify';
-import NavBar from './nav-bar/nav-bar'
 import {
   Route,
   BrowserRouter as Router,
