@@ -34,6 +34,6 @@ export default function SearchProductsInput() {
         placeholder="Search"
         value={inputValue}
         onChange={handleInputChange}
-        style={{ marginLeft: "10px", width: "400px", padding: "10px", marginRight: "100px" }}>
+        style={{ marginLeft: "10px", width: "300px", padding: "10px", marginRight: "70px" }}>
     </input>
 }
