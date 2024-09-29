@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Card from "../../common/Card"
 import styles from "./Product.module.css"
+import placeHolderImage from "../../../assets/image_placeholder.svg"
 
 export default function Product(props: any) {
     const [imageUrl, setImageUrl] = useState(null)
@@ -15,7 +16,7 @@ export default function Product(props: any) {
         <Card>
             {imageUrl 
                 ? <img className={styles.imageCover} src={imageUrl}></img> 
-                : <img className={styles.imageContain} src={"/src/assets/image_placeholder.svg"}></img> }
+                : <img className={styles.imageContain} src={placeHolderImage}></img> }
             <h4>{props.title}</h4>
             {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> */}
             <div className={styles.price}>
