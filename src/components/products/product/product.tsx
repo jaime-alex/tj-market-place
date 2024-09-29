@@ -13,10 +13,10 @@ export default function Product(props: any) {
         }
     },[])
     return <div className={styles.product}>
-        <Card>
+        <Card className={styles.card}>
             {imageUrl 
-                ? <img className={styles.imageCover} src={imageUrl}></img> 
-                : <img className={styles.imageContain} src={placeHolderImage}></img> }
+                ? <img className={`${styles.imageCover} ${styles.image}`} src={imageUrl}></img> 
+                : <img className={`${styles.imageContain} ${styles.image}`} src={placeHolderImage}></img> }
             <h4>{props.title}</h4>
             {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> */}
             <div className={styles.price}>
