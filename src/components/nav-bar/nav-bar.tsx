@@ -42,8 +42,8 @@ export default function NavBar() {
         <div className={`${styles['nav-bar']} ${scrolled ? styles.scrolled : ''}`}>
             <button className={`clear ${getSelectedStyles('/')}`}
                 onClick={() => optionClickedHandler('/')}>Home</button>
-            <button className={`clear ${getSelectedStyles('/identify')}`}
-                onClick={() => optionClickedHandler('/identify')}>Log In</button>
+            {/* <button className={`clear ${getSelectedStyles('/identify')}`}
+                onClick={() => optionClickedHandler('/identify')}>Log In</button> */}
             {location.pathname == "/" && <SearchProductsInput></SearchProductsInput>}
             <img src={cartIcon} style={{ width: "30px", height: "30px", position: "absolute", right: "20px", top: "20px" }}></img>
         </div>

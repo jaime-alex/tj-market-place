@@ -17,7 +17,6 @@ export default function ProductsContainer() {
         }
 
         fetchData().then((res) => {
-            console.log(res.Items)
             productsContext.setProducts(res.Items)
         }).catch(console.error)
     }
@@ -29,6 +28,6 @@ export default function ProductsContainer() {
     if (productsContext.products == null) return <div id="loader" className="loader"></div>
 
     return <div className={styles.productsContainer}>
-        {productsContext.products.map(product => (<Product {...product}></Product>))}
+        {productsContext.products.map((product, i) => (<Product key={i} {...product}></Product>))}
     </div>
 }

@@ -1,0 +1,42 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.images, .details, .options {
+    box-sizing: border-box; 
+    /* border: 1px solid gray; */
+}
+
+.images {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 40%;
+    display: flex;
+}
+
+.imagesCollection {
+    width: 25%;
+    height: 100px;
+}
+
+.mainImage {
+    width: 75%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.details {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 40%;
+}
+
+.options {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;
+}

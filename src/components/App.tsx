@@ -10,6 +10,7 @@ import {
 import NavBar from './nav-bar/nav-bar';
 import { ProductsContext } from '../contexts/products-context';
 import { useState } from 'react';
+import ProductDetails from './product-details/product-details';
 
 function App() {
   const [products, setProducts] = useState(null)
@@ -23,6 +24,7 @@ function App() {
               <Route path='/' element={<NavBar></NavBar>}>
                 <Route index element={<Home />} />
                 <Route path="/identify" element={<Identify />} />
+                <Route path="/product/details/" element={<ProductDetails></ProductDetails>}></Route>
               </Route>
             </Routes>
           </Router>
