@@ -30,6 +30,10 @@ export default function NavBar() {
         }
     }
 
+    const isSearchBarEnabled = (): boolean => {
+        return location.pathname == "/" || location.pathname.includes("/product/details/")
+    }
+
     useEffect(() => {
         window.addEventListener('scroll', setScrollStyles);
 
@@ -44,7 +48,7 @@ export default function NavBar() {
                 onClick={() => optionClickedHandler('/')}>Home</button>
             {/* <button className={`clear ${getSelectedStyles('/identify')}`}
                 onClick={() => optionClickedHandler('/identify')}>Log In</button> */}
-            {location.pathname == "/" && <SearchProductsInput></SearchProductsInput>}
+            {isSearchBarEnabled() && <SearchProductsInput></SearchProductsInput>}
             <img src={cartIcon} style={{ width: "30px", height: "30px", position: "absolute", right: "20px", top: "20px" }}></img>
         </div>
         <div className={styles.outletContainer}>
