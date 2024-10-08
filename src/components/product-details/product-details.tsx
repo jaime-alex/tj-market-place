@@ -12,7 +12,7 @@ interface Props {
 export default function ProductDetails() {
     const location = useLocation();
     const { images, title }: Props = location.state || {};
-    const [mainImage, setMainImage] = useState<string>(images?.length > 0 ? images[0] : placeHolderImage)
+    const [mainImage, _] = useState<string>(images?.length > 0 ? images[0] : placeHolderImage)
 
     return <div className={css.container}>
             <div className={css.images}>
