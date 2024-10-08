@@ -3,12 +3,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 30px;
+    margin-top: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 .images, .details, .options {
     box-sizing: border-box; 
     /* border: 1px solid gray; */
+    padding: 15px;
 }
 
 .images {
@@ -19,12 +23,21 @@
 }
 
 .imagesCollection {
-    width: 25%;
+    width: 20%;
     height: 100px;
 }
 
+.thumbnailImg {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    box-sizing: border-box; 
+}
+
 .mainImage {
-    width: 75%;
+    width: 80%;
     height: 400px;
     object-fit: cover;
 }
