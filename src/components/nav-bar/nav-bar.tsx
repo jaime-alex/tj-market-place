@@ -47,6 +47,8 @@ export default function NavBar() {
             {location.pathname == "/" && <SearchProductsInput></SearchProductsInput>}
             <img src={cartIcon} style={{ width: "30px", height: "30px", position: "absolute", right: "20px", top: "20px" }}></img>
         </div>
-        <Outlet></Outlet>
+        <div className={styles.outletContainer}>
+            <Outlet></Outlet>
+        </div>
     </>
 }

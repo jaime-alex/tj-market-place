@@ -21,7 +21,7 @@ export default function Product(props: any) {
                     : <img className={`${styles.imageContain} ${styles.image}`} src={placeHolderImage}></img>}
             </Link>
             <h4>
-                <Link to={"/product/details/"} state={props}>
+                <Link to={"/product/details/"} state={{...props, images: images}}>
                     {props.title}
                 </Link>
             </h4>

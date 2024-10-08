@@ -17,6 +17,11 @@
     padding-bottom: 8px;
 }
 
+.outletContainer {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
 .nav-bar button {
     font-size: 16px;
     margin: 10px;
