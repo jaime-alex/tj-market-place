@@ -18,8 +18,8 @@
 }
 
 .outletContainer {
-    margin-right: 30px;
-    margin-left: 30px;
+    /* margin-right: 30px;
+    margin-left: 30px; */
 }
 
 .nav-bar button {
@@ -32,8 +32,21 @@
     border: 1px solid rgb(108, 152, 219);
 }
 
+@media (max-width: 1200px) {
+
+    .outletContainer {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
 @media (max-width: 900px) {
     .nav-bar button {
         font-size: 14px;
+    }
+
+    .outletContainer {
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }
