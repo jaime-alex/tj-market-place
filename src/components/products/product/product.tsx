@@ -21,15 +21,15 @@ export default function Product(props: any) {
                     : <img className={`${styles.imageContain} ${styles.image}`} src={placeHolderImage}></img>}
             </Link>
             <h4>
-                <Link to={"/product/details/"} state={{...props, images: images}}>
+                <Link className={styles.titleLink} to={"/product/details/"} state={{...props, images: images}}>
                     {props.title}
                 </Link>
             </h4>
             {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> */}
             <div className={styles.price}>
-                <span className={styles.symbol}>$</span>
-                <span className={styles.value}>750</span>
-                <span className={styles.fraction}>00</span>
+                {props.price ? <><span className={styles.symbol}>$</span>
+                <span className={styles.value}>{props.price}</span>
+                <span className={styles.fraction}>00</span></> : "--"}
             </div>
             <button className={`yellow ${styles.button}`}>Agregar a carrito</button>
         </Card>
